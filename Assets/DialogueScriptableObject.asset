@@ -13,5 +13,8 @@ MonoBehaviour:
   m_Name: DialogueScriptableObject
   m_EditorClassIdentifier: 
   textComponent: {fileID: 0}
-  lines: []
-  textSpeed: 0
+  lines:
+  - gyatts plan
+  - gyatts plan
+  - i love gyatts plan
+  textSpeed: 0.05

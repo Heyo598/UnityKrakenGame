@@ -20,7 +20,7 @@ public class Target : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            
+            gameObject.SetActive(false);
         }
     }
 
