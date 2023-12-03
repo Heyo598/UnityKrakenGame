@@ -602,6 +602,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5501646106992587110, guid: ba56809010a5dc74f850ad5c623b4230, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -150
+      objectReference: {fileID: 0}
+    - target: {fileID: 5501646106992587110, guid: ba56809010a5dc74f850ad5c623b4230, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -800
+      objectReference: {fileID: 0}
+    - target: {fileID: 5501646106992587110, guid: ba56809010a5dc74f850ad5c623b4230, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -25
+      objectReference: {fileID: 0}
+    - target: {fileID: 5501646106992587110, guid: ba56809010a5dc74f850ad5c623b4230, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -300
+      objectReference: {fileID: 0}
+    - target: {fileID: 5501646106992587111, guid: ba56809010a5dc74f850ad5c623b4230, type: 3}
+      propertyPath: boxes.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5501646106992587111, guid: ba56809010a5dc74f850ad5c623b4230, type: 3}
+      propertyPath: boxes.Array.data[0]
+      value: 
+      objectReference: {fileID: 674685869}
     - target: {fileID: 5501646106992587129, guid: ba56809010a5dc74f850ad5c623b4230, type: 3}
       propertyPath: m_Name
       value: DialogeBox_pnl

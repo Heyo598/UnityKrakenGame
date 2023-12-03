@@ -6,8 +6,14 @@ using TMPro;
 public class Dialogue : MonoBehaviour
 {
     public TextMeshProUGUI textComponent;
-    public string[] lines;
+
+    [SerializeField]
+    private DialogueScriptableObject dialogueScriptableObject;
+
+    [Header("Text Options")]
+    //public string[] lines;
     public float textSpeed;
+
     private int index;
 
     // Start is called before the first frame update
@@ -15,7 +21,7 @@ public class Dialogue : MonoBehaviour
     {
         textComponent.text = string.Empty;
         
-        
+
     }
 
     // Update is called once per frame
@@ -26,16 +32,21 @@ public class Dialogue : MonoBehaviour
             StartDialogue();
         }
 
+        if (Input.GetMouseButtonDown(0))
+        {
+            
+        }
+
         if (Input.GetMouseButtonDown(1))
         {
-            if (textComponent.text == lines[index])
+            if (textComponent.text == dialogueScriptableObject.lines[index])
             {
                 NextLine();
             }
             else
             {
                 StopAllCoroutines();
-                textComponent.text = lines[index];
+                textComponent.text = dialogueScriptableObject.lines[index];
             }
         }
     }
@@ -43,16 +54,13 @@ public class Dialogue : MonoBehaviour
     void StartDialogue()
     {
         index = 0;
-        if (Input.GetKeyDown("f"))
-        {
-            StartCoroutine(TypeLine());
-        }
-        
+        gameObject.SetActive(true);
+        StartCoroutine(TypeLine()); 
     }
 
     IEnumerator TypeLine()
     {
-        foreach (char c in lines[index].ToCharArray())
+        foreach (char c in dialogueScriptableObject.lines[index].ToCharArray())
         {
             textComponent.text += c;
             yield return new WaitForSeconds(textSpeed);
@@ -61,7 +69,7 @@ public class Dialogue : MonoBehaviour
 
     void NextLine()
     {
-        if (index < lines.Length - 1)
+        if (index < dialogueScriptableObject.lines.Length - 1)
         {
             index++;
             textComponent.text = string.Empty;
@@ -69,7 +77,7 @@ public class Dialogue : MonoBehaviour
         }
         else
         {
-            gameObject.SetActive(false);
+            textComponent.text = string.Empty;
         }
     }
 }
