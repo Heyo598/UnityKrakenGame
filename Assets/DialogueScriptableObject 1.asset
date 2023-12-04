@@ -14,6 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 0}
   lines:
-  - chungus
-  - ur mom
-  textSpeed: 0
+  - chungus is really cool
+  - ur mom is also really cool

@@ -188,7 +188,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &377624822
 GameObject:
@@ -285,7 +285,7 @@ RectTransform:
   - {fileID: 1190325962}
   - {fileID: 1647197038}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -386,12 +386,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!4 &730634791 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3604247316814539091, guid: 7c3ccf29bfbb40a47be0e6358f204165, type: 3}
+  m_PrefabInstance: {fileID: 906157609}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &906157609
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1518482898}
     m_Modifications:
     - target: {fileID: 3604247316814539088, guid: 7c3ccf29bfbb40a47be0e6358f204165, type: 3}
       propertyPath: m_Name
@@ -399,7 +404,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3604247316814539091, guid: 7c3ccf29bfbb40a47be0e6358f204165, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3604247316814539091, guid: 7c3ccf29bfbb40a47be0e6358f204165, type: 3}
       propertyPath: m_LocalPosition.x
@@ -407,7 +412,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3604247316814539091, guid: 7c3ccf29bfbb40a47be0e6358f204165, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.00000047683716
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3604247316814539091, guid: 7c3ccf29bfbb40a47be0e6358f204165, type: 3}
       propertyPath: m_LocalPosition.z
@@ -449,6 +454,10 @@ PrefabInstance:
       propertyPath: dialogue
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 4955778451896665351, guid: 7c3ccf29bfbb40a47be0e6358f204165, type: 3}
+      propertyPath: dialogueBox
+      value: 
+      objectReference: {fileID: 1190325963}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7c3ccf29bfbb40a47be0e6358f204165, type: 3}
 --- !u!1 &963194225
@@ -647,14 +656,19 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1329918326 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3604247316814539091, guid: 7c3ccf29bfbb40a47be0e6358f204165, type: 3}
+  m_PrefabInstance: {fileID: 1478698400}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1478698400
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1518482898}
     m_Modifications:
     - target: {fileID: 3604247316814539088, guid: 7c3ccf29bfbb40a47be0e6358f204165, type: 3}
       propertyPath: m_Name
@@ -662,7 +676,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3604247316814539091, guid: 7c3ccf29bfbb40a47be0e6358f204165, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3604247316814539091, guid: 7c3ccf29bfbb40a47be0e6358f204165, type: 3}
       propertyPath: m_LocalPosition.x
@@ -708,6 +722,10 @@ PrefabInstance:
       propertyPath: words
       value: 
       objectReference: {fileID: 1647197037}
+    - target: {fileID: 4955778451896665351, guid: 7c3ccf29bfbb40a47be0e6358f204165, type: 3}
+      propertyPath: dialogueBox
+      value: 
+      objectReference: {fileID: 1647197037}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7c3ccf29bfbb40a47be0e6358f204165, type: 3}
 --- !u!1 &1518482897
@@ -720,7 +738,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1518482898}
   m_Layer: 0
-  m_Name: InteractableObjects
+  m_Name: TextBoxes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -737,7 +755,9 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 730634791}
+  - {fileID: 1329918326}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -831,6 +851,18 @@ PrefabInstance:
     - target: {fileID: 1922029143068557724, guid: e3400a968fef8444daacdd8a4c5e1e2f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1922029143068557725, guid: e3400a968fef8444daacdd8a4c5e1e2f, type: 3}
+      propertyPath: fontSize
+      value: 91
+      objectReference: {fileID: 0}
+    - target: {fileID: 1922029143068557725, guid: e3400a968fef8444daacdd8a4c5e1e2f, type: 3}
+      propertyPath: textSize
+      value: 62
+      objectReference: {fileID: 0}
+    - target: {fileID: 1922029143068557725, guid: e3400a968fef8444daacdd8a4c5e1e2f, type: 3}
+      propertyPath: textSpeed
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 1922029143068557725, guid: e3400a968fef8444daacdd8a4c5e1e2f, type: 3}
       propertyPath: dialogueScriptableObject
@@ -950,12 +982,28 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1922029143068557725, guid: e3400a968fef8444daacdd8a4c5e1e2f, type: 3}
+      propertyPath: fontSize
+      value: 62
+      objectReference: {fileID: 0}
+    - target: {fileID: 1922029143068557725, guid: e3400a968fef8444daacdd8a4c5e1e2f, type: 3}
+      propertyPath: textSize
+      value: 91
+      objectReference: {fileID: 0}
+    - target: {fileID: 1922029143068557725, guid: e3400a968fef8444daacdd8a4c5e1e2f, type: 3}
+      propertyPath: textSpeed
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 1922029143068557725, guid: e3400a968fef8444daacdd8a4c5e1e2f, type: 3}
       propertyPath: dialogueScriptableObject
       value: 
       objectReference: {fileID: 11400000, guid: d52ec28644b54db41a1ef8630b94e808, type: 2}
     - target: {fileID: 1922029143068557727, guid: e3400a968fef8444daacdd8a4c5e1e2f, type: 3}
       propertyPath: m_Name
-      value: DialogeBox_pnl
+      value: DialogueBox_pnl
+      objectReference: {fileID: 0}
+    - target: {fileID: 1922029144387886717, guid: e3400a968fef8444daacdd8a4c5e1e2f, type: 3}
+      propertyPath: m_enableAutoSizing
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e3400a968fef8444daacdd8a4c5e1e2f, type: 3}

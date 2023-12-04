@@ -7,36 +7,29 @@ public class Dialogue : MonoBehaviour
 {
     public TextMeshProUGUI textComponent;
 
-    [SerializeField]
+    [SerializeField][Tooltip("Place desired text for this object")]
     private DialogueScriptableObject dialogueScriptableObject;
 
     [Header("Text Options")]
-    //public string[] lines;
-    public float textSpeed;
+    [SerializeField][Range(0.01f,0.1f)]
+    private float textSpeed;
+
+    [SerializeField][Range(50,100)]
+    private int textSize;
 
     private int index;
 
     // Start is called before the first frame update
     void Start()
     {
-        textComponent.text = string.Empty;
         gameObject.SetActive(false);
-
+        textComponent.text = string.Empty;
+        textComponent.fontSize = textSize;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown("f"))
-        {
-            StartDialogue();
-        }
-
-        if (Input.GetMouseButtonDown(0))
-        {
-            
-        }
-
         if (Input.GetMouseButtonDown(0))
         {
             if (textComponent.text == dialogueScriptableObject.lines[index])

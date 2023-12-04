@@ -11,12 +11,4 @@ public class DialogueScriptableObject : ScriptableObject
 
     [Header("Text Options")]
     public string[] lines;
-    public float textSpeed;
-
-    private int index;
-
-    void Start()
-    {
-        textComponent.text = string.Empty;
-    }
 }

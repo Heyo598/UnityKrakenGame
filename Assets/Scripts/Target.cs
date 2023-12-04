@@ -5,13 +5,9 @@ using UnityEngine;
 public class Target : MonoBehaviour
 {
     private Renderer renderer;
-    /*
-    [SerializeField]
-    private DialogueScriptableObject dialogueScriptableObject;
-    */
 
-    [SerializeField]
-    private Dialogue words;
+    [SerializeField][Tooltip("Place the dialogue box that matches the text you want")]
+    private Dialogue dialogueBox;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,13 +22,13 @@ public class Target : MonoBehaviour
 
     public void DialogueOn()
     {
-        words.gameObject.SetActive(true);
+        dialogueBox.gameObject.SetActive(true);
     }
 
     void OnMouseDown()
     {
         DialogueOn();
-        words.StartDialogue();
+        dialogueBox.StartDialogue();
     }
 
     private void OnMouseEnter()
