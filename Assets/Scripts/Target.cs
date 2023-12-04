@@ -5,10 +5,13 @@ using UnityEngine;
 public class Target : MonoBehaviour
 {
     private Renderer renderer;
-
+    /*
     [SerializeField]
     private DialogueScriptableObject dialogueScriptableObject;
+    */
 
+    [SerializeField]
+    private Dialogue words;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,10 +21,18 @@ public class Target : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
-        {
-            gameObject.SetActive(false);
-        }
+        
+    }
+
+    public void DialogueOn()
+    {
+        words.gameObject.SetActive(true);
+    }
+
+    void OnMouseDown()
+    {
+        DialogueOn();
+        words.StartDialogue();
     }
 
     private void OnMouseEnter()

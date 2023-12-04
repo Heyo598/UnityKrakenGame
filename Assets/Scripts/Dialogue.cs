@@ -20,7 +20,7 @@ public class Dialogue : MonoBehaviour
     void Start()
     {
         textComponent.text = string.Empty;
-        
+        gameObject.SetActive(false);
 
     }
 
@@ -37,7 +37,7 @@ public class Dialogue : MonoBehaviour
             
         }
 
-        if (Input.GetMouseButtonDown(1))
+        if (Input.GetMouseButtonDown(0))
         {
             if (textComponent.text == dialogueScriptableObject.lines[index])
             {
@@ -51,7 +51,7 @@ public class Dialogue : MonoBehaviour
         }
     }
 
-    void StartDialogue()
+    public void StartDialogue()
     {
         index = 0;
         gameObject.SetActive(true);
@@ -77,7 +77,7 @@ public class Dialogue : MonoBehaviour
         }
         else
         {
-            textComponent.text = string.Empty;
+            gameObject.SetActive(false);
         }
     }
 }
