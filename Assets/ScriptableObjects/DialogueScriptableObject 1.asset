@@ -12,7 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1134eec2dd4ecf546a1d6f97f6ffe652, type: 3}
   m_Name: DialogueScriptableObject 1
   m_EditorClassIdentifier: 
-  textComponent: {fileID: 0}
   lines:
-  - chungus is really cool
-  - ur mom is also really cool
+  - Hello Traveler!
+  - What can I sell you?
