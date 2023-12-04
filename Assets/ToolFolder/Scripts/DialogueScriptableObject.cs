@@ -7,8 +7,6 @@ using TMPro;
     "ScriptableObjects/Dialogue")]
 public class DialogueScriptableObject : ScriptableObject
 {
-    public TextMeshProUGUI textComponent;
-
     [Header("Text Options")]
     public string[] lines;
 }
