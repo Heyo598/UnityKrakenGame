@@ -17,6 +17,16 @@ public class Dialogue : MonoBehaviour
     [SerializeField][Range(50,100)]
     private int textSize;
 
+    [Header("Text Color")]
+    [SerializeField][Range(0,1)]
+    private float Red;
+
+    [SerializeField][Range(0,1)]
+    private float Green;
+
+    [SerializeField][Range(0,1)]
+    private float Blue;
+
     private int index;
 
     // Start is called before the first frame update
@@ -25,6 +35,8 @@ public class Dialogue : MonoBehaviour
         gameObject.SetActive(false);
         textComponent.text = string.Empty;
         textComponent.fontSize = textSize;
+        textComponent.color = new Color(Red, Green, Blue);
+        
     }
 
     // Update is called once per frame
